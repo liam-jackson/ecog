@@ -116,7 +116,8 @@ for sub_idx = 1:length(sub_nums)
     
     all_subs_indiv_elect_feat_table = [all_subs_indiv_elect_feat_table; sub_feat_class_table];
 end
-
+%%
 indiv_elect_feat_set_folder = fullfile(compiled_data_path, 'FeatureSets', times_folder);
-mkdir(indiv_elect_feat_set_folder);
-save(fullfile(indiv_elect_feat_set_folder, 'indiv_elect_feature_set_table'), 'all_subs_indiv_elect_feat_table', '-v7.3');
+% mkdir(indiv_elect_feat_set_folder);
+% save(fullfile(indiv_elect_feat_set_folder, 'indiv_elect_feature_set_table'), 'all_subs_indiv_elect_feat_table', '-v7.3');
+load(fullfile(indiv_elect_feat_set_folder, 'indiv_elect_feature_set_table'), 'all_subs_indiv_elect_feat_table');

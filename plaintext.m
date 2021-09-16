@@ -1,4 +1,8 @@
 function proper = plaintext(str_arr_or_cell_arr)
+
+st = dbstack;
+fxn = st.name
+
 if ischar(str_arr_or_cell_arr)
     proper = plaintext_singular(string(str_arr_or_cell_arr));
 else

@@ -237,7 +237,6 @@ fprintf('Done.\n\n');
 threshold_table = find_significant_auc_threshold(stim_all_nodes_all_iters, onset_all_nodes_all_iters, p_value);
 threshd_auc_data = threshold_indiv_data(sub_stim_e_id_auc_all_labels, sub_onset_e_id_auc_all_labels, threshold_table);
 
-
 close all; 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%   Results and Stats   %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -258,6 +257,8 @@ sig_ovr_visuals;        % fig 6-8
 ind_ovr_e_proportion;   % fig 9-11
 %%%% Step 12. Projecting significant electrodes onto brain
 % mni_electrode_visual;   % fig 12 (not a figure, creates a surf_show plot)
+
+
 
 close all; 
 
